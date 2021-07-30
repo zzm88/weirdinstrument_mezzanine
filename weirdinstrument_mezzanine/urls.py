@@ -42,6 +42,7 @@ urlpatterns += [
     # one out.
 
     url("^$", homeview, name="home"),
+    url("^testhome/$", homeview, name="home"),
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
