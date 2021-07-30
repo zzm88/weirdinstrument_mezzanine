@@ -6,6 +6,8 @@ def homeview(request):
         template = 'home.html'
     elif 'liufei-piano-studio.com' in request.META['HTTP_HOST']:
         template =  'pinao_home.html'
+    elif 'kissabc.xyz' in request.META['HTTP_HOST']:
+        template =  'home.html'
     # Render app template with context
     return render(request, template,{'templatename':template})
 
